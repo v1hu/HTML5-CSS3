@@ -1,0 +1,185 @@
+        <!DOCTYPE html>
+        <html lang="en">
+
+<head>
+    
+        <meta charset="UTF-8">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Iframes</title>
+
+
+
+        <style>
+
+                body {
+
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bold;
+                    background-color: rgba(151, 150, 148, 0.514);
+
+}
+
+                body h1, body h3 {
+
+                    text-align: center;
+                    color: rgb(243, 74, 8);
+
+}
+
+                table {
+
+                    margin: auto;
+                    width: 900px;
+                    border-collapse: collapse;
+                    position: relative;
+
+}
+
+                td , th {
+
+                    border: 1px solid black;
+                    padding: 10px;
+
+}
+
+                caption {
+                    
+                    font-size: 1.3em;
+                    font-weight: bold;
+                    padding: 10px;
+                    background-color: rgb(255, 255, 255);
+}
+
+                aside {
+
+                    background-color: rgba(0, 0, 0, 0.404);
+                    border-radius: 10px;
+                    width: 80%;
+                    padding: 15px;
+                    margin: 0 auto 20px auto;
+                    text-align: justify;
+                    box-shadow: 20px;
+
+}
+
+                .botao {
+
+                    width: 120px;
+                    display: block;
+                    margin: 20px auto;
+                    padding: 5px;
+                    background-color: brown;
+                    text-decoration: none;
+                    text-align: center;
+                    border: 3px solid black;
+                    text-shadow: 5px;
+
+}
+
+                iframe {
+                    
+                    display: block;
+                    margin: auto;
+                    border: 2px solid black;
+                    width: 600px;
+                    height: 400px;
+}
+
+         </style>
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+            <h1>
+
+                <mark>Capítulo 22 Aula 7 – Tornando iframes mais seguros</mark>
+
+            </h1>
+
+                        <aside>
+
+<hr>
+                <p>
+                    
+                <mark>
+
+                    <ul>
+                        <li sty> <a href="cap22-aula1-2.html" target="frame">Primeira Pagina</a></li>
+                        <li><a href="cap22-aula3-4.html" target="frame">Segunda Página</a></li>
+                        <li><a href="../mod3/cap19-aula2.html" target="frame">Terceira Página</a></li>
+                    </ul>
+
+                </mark> 
+                
+<br><br>
+
+                    <iframe name="frame"  srcdoc=" <h1 style='background-color:red'> Escolha uma das opçoes acima </h1> <p> escolha a pagina acima </p> <img src='../mod1/imagens/gato.png'> "  height="500" width="300"  frameborder="0"> </iframe> <br><br><br>
+
+                    <b>&lt; iframe <mark>name="frame"</mark>  srcdoc=" &lt;h1 style='background-color:red'&gt; Escolha uma das opçoes acima &lt;/h1&gt; &lt;p&gt; escolha a pagina acima &lt;/p&gt; &lt;img src='../mod1/imagens/gato.png'&gt; "  height="500" width="300"  frameborder="0"&gt; &gt;/iframe&gt;</b>
+                    <br><br>
+
+                    <b>&lt; iframe <mark>name="frame"</mark> src="../mod3/cap19-aula2.html" frameborder="0"&gt;&lt;/iframe&gt;</b><br><br>
+
+                    quando se quer criar uma pagina inicial no iframe, ou usa a primeira pagina, ou adiciona o parametro srcdoc="" onde da para escrever um html dentro, 
+                    
+                
+                </p>
+<hr>                  
+            </aside>
+
+            <div id="container">
+                
+            </div>
+
+</body><br>
+   
+              <h1>
+
+                <mark>Capítulo 22 Aula 8 – Dicas para iframes melhores</mark>
+
+            </h1>
+
+            <aside>
+
+<hr>
+                <p>
+                    
+                <mark>
+
+                    <ul>
+                        <li> acessibilidade</li>
+                        <li> usabilidade</li>
+                        <li> segurança e SEO</li>
+                    </ul>
+
+                </mark> 
+                
+<br><br>
+
+                    Googlebot (robô de indexação) pode ter dificuldade em rastrear e identificar corretamente conteúdos inseridos dentro de iframes, o que pode prejudicar o ranqueamento orgânico de um site. <br><br>
+
+                    O professor também detalha questões de acessibilidade e usabilidade, mostrando que leitores de tela — usados por pessoas com deficiência visual — muitas vezes não conseguem interpretar corretamente o conteúdo de um iframe, o que pode comprometer a experiência do usuário. Além disso, Guanabara cita que navegadores diferentes podem se confundir ao lidar com botões de navegação (“voltar” e “avançar”) e janelas abertas a partir de iframes, o que reforça a importância de testá-los com cuidado em múltiplos ambientes. <br><br>
+                    
+                    Outro ponto central da aula é a segurança. Guanabara compara o uso de iframes à ideia de “abrir uma porta” do seu site para outro domínio — o que pode representar um risco caso o conteúdo incorporado seja malicioso ou tenha sido invadido. Ele cita ameaças como o Cross-Site Scripting (XSS) e outros tipos de ataques que exploram vulnerabilidades entre sites, alertando que a responsabilidade é sempre do desenvolvedor. <br><br>
+
+                    Guanabara encerra reforçando a mensagem principal do vídeo: “Use, mas não abuse dos iframes.” Eles são recursos valiosos quando aplicados com consciência e propósito. Na próxima aula, o professor promete ensinar como aumentar a segurança do uso de iframes por meio de configurações específicas, como o sandbox e outras políticas do HTML5. Uma continuação essencial para quem quer dominar o uso profissional desse recurso.
+                </p>
+<hr>                  
+            </aside>
+
+<hr>
+
+<p><a class="botao" href="cap22-aula7-8.html">Próxima Aula</a></p>
+            
+<p><a class="botao" href="cap22-aula3-4.html">Aula Anterior</a></p>
+
+</html>
