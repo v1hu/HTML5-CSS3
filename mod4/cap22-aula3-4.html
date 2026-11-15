@@ -1,0 +1,210 @@
+        <!DOCTYPE html>
+        <html lang="en">
+
+<head>
+    
+        <meta charset="UTF-8">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Iframes</title>
+
+
+
+        <style>
+
+                body {
+
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bold;
+                    background-color: rgba(151, 150, 148, 0.514);
+
+}
+
+                body h1, body h3 {
+
+                    text-align: center;
+                    color: rgb(243, 74, 8);
+
+}
+
+                table {
+
+                    margin: auto;
+                    width: 900px;
+                    border-collapse: collapse;
+                    position: relative;
+
+}
+
+                td , th {
+
+                    border: 1px solid black;
+                    padding: 10px;
+
+}
+
+                caption {
+                    
+                    font-size: 1.3em;
+                    font-weight: bold;
+                    padding: 10px;
+                    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+                aside {
+
+                    background-color: rgba(0, 0, 0, 0.404);
+                    border-radius: 10px;
+                    width: 80%;
+                    padding: 15px;
+                    margin: 0 auto 20px auto;
+                    text-align: justify;
+                    box-shadow: 20px;
+
+}
+
+
+                .botao {
+
+                    width: 120px;
+                    display: block;
+                    margin: 20px auto;
+                    padding: 5px;
+                    background-color: brown;
+                    text-decoration: none;
+                    text-align: center;
+                    border: 3px solid black;
+                    text-shadow: 5px;
+
+}
+
+                tr.destaque {
+
+                    background-color: aqua;
+}
+
+                col.cnome {
+
+                    background-color: yellowgreen;
+}
+
+                col.cidade {
+
+                    background-color: red;
+}
+
+                col.cgrupo{
+
+                    background-color: blueviolet;
+}
+
+                div#container {
+
+                    overflow: auto;
+}
+
+                iframe {
+
+                    border: 2px solid black;
+                    width: 400px;
+                    height: 400px;
+                }
+
+         </style>
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+            <h1>
+
+                <mark>Capítulo 22 Aula 1 – O iframe ainda pode ser usado?</mark>
+
+            </h1>
+
+            <aside>
+<hr>
+                <p>
+                    Testando o uso de um iframe <br><br>
+
+                    <mark>&lt;iframe src="https://www.cursoemvideo.com/" frameborder="0"&gt;&lt;/iframe&lt;</mark><br><br>
+                    
+                    Acessando o Site do 
+                    
+                    <iframe src="https://www.cursoemvideo.com/" frameborder="0"></iframe>
+                    
+                    para aprender a programar <br><br><br>
+
+                    O site do <iframe src="https://www.google.com.br/" frameborder="0">
+
+                    <a href="https://www.google.com.br/" target="_blank"> Google</a>
+
+                    </iframe> também é mt legal, pena que n funciona em um iframe
+            
+            </p>
+<hr>
+            </aside>        
+
+            <div id="container">
+                
+            </div>
+
+</body><br>
+   
+              <h1>
+
+                <mark>Capítulo 22 Aula 2 – Configurando iframes</mark>
+
+            </h1>
+
+            <aside>
+
+<hr>
+                <p>
+
+                    No meio do iframe fica o texto ou link caso o navegador da pessoa nao seja compativel <br><br><br>
+
+                    <u>&lt;iframe src="https://gustavoguanabara.github.io/" frameborder="0" height="500" width="300" &gt;</u><br><br><br> 
+                    <mark>TEXTO = [ Seu navegador não é compativel] OU &lt;a href="https://gustavoguanabara.github.io/" &gt; cursoemvideo &lt; / a &gt;</mark> <br><br>
+                    &lt;/iframe&lt;<br><br>
+                    
+                    O github do Guanabara
+
+                    <iframe src="https://gustavoguanabara.github.io/"  height="500" width="300" scolling="auto" frameborder="0">
+
+                        <a href="https://gustavoguanabara.github.io/" target="_blank"> github</a>
+
+                    </iframe> 
+
+                    também é mt legal. <br><br><br>
+
+                    O tamanho padrão do iframe é 300x150,  a configuração do exemplo do github esta com a algura e largura diferente da CSS, e oque prevalece é a configuração das CSS. <br><br>
+
+                    <mark>scolling=" "</mark> - Tab absoleta , usar <mark>iframe { overflow: hidden; }</mark> <br><br>
+                    Antigamente, ele era usado para controlar as barras de rolagem de um iframe <br>
+                    - scrolling="yes" — exibe a rolagem. <br>
+                    - scrolling="no" — remove a rolagem. <br>
+                    - scrolling="auto" — deixa o navegador decidir. <br>
+                    
+                
+                </p>
+<hr>                  
+            </aside>
+
+<hr>
+
+<p><a class="botao" href="cap22-aula3-4.html">Próxima Aula</a></p>
+            
+<p><a class="botao" href="cap21-aula13-14.html">Aula Anterior</a></p>
+
+</html>
