@@ -52,9 +52,6 @@
                     background-color: rgb(255, 255, 255);
 }
 
-
-
-
                 aside {
 
                     background-color: rgba(0, 0, 0, 0.404);
@@ -66,7 +63,6 @@
                     box-shadow: 20px;
 
 }
-
 
                 .botao {
 
@@ -82,37 +78,14 @@
 
 }
 
-                tr.destaque {
-
-                    background-color: aqua;
-}
-
-                col.cnome {
-
-                    background-color: yellowgreen;
-}
-
-                col.cidade {
-
-                    background-color: red;
-}
-
-                col.cgrupo{
-
-                    background-color: blueviolet;
-}
-
-                div#container {
-
-                    overflow: auto;
-}
-
                 iframe {
-
+                    
+                    display: block;
+                    margin: auto;
                     border: 2px solid black;
-                    width: 400px;
+                    width: 600px;
                     height: 400px;
-                }
+}
 
          </style>
 
@@ -128,28 +101,22 @@
 
             <h1>
 
-                <mark>Capítulo 22 Aula 1 – O iframe ainda pode ser usado?</mark>
+                <mark>Capítulo 22 Aula 3 – Conteúdo local no iframe</mark>
 
             </h1>
 
             <aside>
 <hr>
                 <p>
-                    Testando o uso de um iframe <br><br>
+                    Test com iframe <br><br>
 
                     <mark>&lt;iframe src="https://www.cursoemvideo.com/" frameborder="0"&gt;&lt;/iframe&lt;</mark><br><br>
                     
-                    Acessando o Site do 
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum in quasi adipisci cumque aliquid iure, tempora maxime sint cum officia fuga reiciendis assumenda tenetur, vel facilis illo omnis accusantium similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut excepturi earum, perspiciatis architecto labore eaque at nihil hic facere fugiat quia dolorem. Sint cupiditate, nihil harum molestias maiores iste magnam?</p>
                     
-                    <iframe src="https://www.cursoemvideo.com/" frameborder="0"></iframe>
+                    <iframe src="..//mod3/cap21-aula12-desafio.html" frameborder="0"></iframe>
                     
-                    para aprender a programar <br><br><br>
-
-                    O site do <iframe src="https://www.google.com.br/" frameborder="0">
-
-                    <a href="https://www.google.com.br/" target="_blank"> Google</a>
-
-                    </iframe> também é mt legal, pena que n funciona em um iframe
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non quasi accusantium natus, laboriosam aut nisi delectus reprehenderit enim ducimus illo quo numquam dolorum aliquid, cumque pariatur perspiciatis quidem perferendis sint?para aprender a programar Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore commodi maxime, molestias inventore iusto perspiciatis error amet repellendus accusamus sed voluptate animi molestiae incidunt ipsa quae aliquam enim earum nihil!</p> <br><br>
             
             </p>
 <hr>
@@ -163,7 +130,7 @@
    
               <h1>
 
-                <mark>Capítulo 22 Aula 2 – Configurando iframes</mark>
+                <mark>Capítulo 22 Aula 4 – Navegação no iframe</mark>
 
             </h1>
 
@@ -171,30 +138,24 @@
 
 <hr>
                 <p>
-
-                    No meio do iframe fica o texto ou link caso o navegador da pessoa nao seja compativel <br><br><br>
-
-                    <u>&lt;iframe src="https://gustavoguanabara.github.io/" frameborder="0" height="500" width="300" &gt;</u><br><br><br> 
-                    <mark>TEXTO = [ Seu navegador não é compativel] OU &lt;a href="https://gustavoguanabara.github.io/" &gt; cursoemvideo &lt; / a &gt;</mark> <br><br>
-                    &lt;/iframe&lt;<br><br>
                     
-                    O github do Guanabara
+                <mark>
 
-                    <iframe src="https://gustavoguanabara.github.io/"  height="500" width="300" scolling="auto" frameborder="0">
+                    <ul>
+                        <li> <a href="cap22-aula1-2.html" target="frame">Primeira Pagina</a></li>
+                        <li><a href="cap22-aula3-4.html" target="frame">Segunda Página</a></li>
+                        <li><a href="../mod3/cap19-aula2.html" target="frame">Terceira Página</a></li>
+                    </ul>
 
-                        <a href="https://gustavoguanabara.github.io/" target="_blank"> github</a>
+                </mark> 
+                
+<br><br>
 
-                    </iframe> 
+                    <iframe name="frame"  src="https://gustavoguanabara.github.io/"  height="500" width="300" scolling="auto" frameborder="0"> </iframe> <br><br><br>
 
-                    também é mt legal. <br><br><br>
+                    <b>&lt; a href="cap22-aula1-2.html" <mark>target="frame"</mark> &gt; Primeira Página &lt;/a&gt;</b><br><br>
 
-                    O tamanho padrão do iframe é 300x150,  a configuração do exemplo do github esta com a algura e largura diferente da CSS, e oque prevalece é a configuração das CSS. <br><br>
-
-                    <mark>scolling=" "</mark> - Tab absoleta , usar <mark>iframe { overflow: hidden; }</mark> <br><br>
-                    Antigamente, ele era usado para controlar as barras de rolagem de um iframe <br>
-                    - scrolling="yes" — exibe a rolagem. <br>
-                    - scrolling="no" — remove a rolagem. <br>
-                    - scrolling="auto" — deixa o navegador decidir. <br>
+                    <b>&lt; iframe <mark>name="frame"</mark> src="../mod3/cap19-aula2.html" frameborder="0"&gt;&lt;/iframe&lt;</b><br><br>
                     
                 
                 </p>
@@ -203,8 +164,8 @@
 
 <hr>
 
-<p><a class="botao" href="cap22-aula3-4.html">Próxima Aula</a></p>
+<p><a class="botao" href="cap22-aula5-6.html">Próxima Aula</a></p>
             
-<p><a class="botao" href="cap21-aula13-14.html">Aula Anterior</a></p>
+<p><a class="botao" href="cap22-aula1-2.html">Aula Anterior</a></p>
 
 </html>
