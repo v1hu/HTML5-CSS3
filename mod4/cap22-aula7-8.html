@@ -108,31 +108,36 @@
                         <aside>
 
 <hr>
+
                 <p>
-                    
-                <mark>
+                    &lt; iframe src="cap22-aula7-8.html"  <mark>sandbox="sandbox"</mark>&gt; &lt;/iframe&gt; <br><br>
 
-                    <ul>
-                        <li sty> <a href="cap22-aula1-2.html" target="frame">Primeira Pagina</a></li>
-                        <li><a href="cap22-aula3-4.html" target="frame">Segunda Página</a></li>
-                        <li><a href="../mod3/cap19-aula2.html" target="frame">Terceira Página</a></li>
-                    </ul>
+                    <u>SANDBOX:</u> cria uma proteção no máximo, bloqueando algumas funcionalidades, que não deixa o site exibido no iframe, capturar nenhum tipo informção. <br><br>
 
-                </mark> 
-                
-<br><br>
+                    <mark>sandbox="allow-same-origin allow-forms allow-scripts"</mark><br><br>
 
-                    <iframe name="frame"  srcdoc=" <h1 style='background-color:red'> Escolha uma das opçoes acima </h1> <p> escolha a pagina acima </p> <img src='../mod1/imagens/gato.png'> "  height="500" width="300"  frameborder="0"> </iframe> <br><br><br>
+                    <mark>allow-same-origin</mark> :aceita valores de mesma origem, mesmo servidor que o meu <br><br> 
 
-                    <b>&lt; iframe <mark>name="frame"</mark>  srcdoc=" &lt;h1 style='background-color:red'&gt; Escolha uma das opçoes acima &lt;/h1&gt; &lt;p&gt; escolha a pagina acima &lt;/p&gt; &lt;img src='../mod1/imagens/gato.png'&gt; "  height="500" width="300"  frameborder="0"&gt; &gt;/iframe&gt;</b>
-                    <br><br>
+                    <mark>allow-forms: </mark>aceita formulários <br><br>
 
-                    <b>&lt; iframe <mark>name="frame"</mark> src="../mod3/cap19-aula2.html" frameborder="0"&gt;&lt;/iframe&gt;</b><br><br>
+                    <mark>allow-scripts:</mark> aceita scripts<br><br>
 
-                    quando se quer criar uma pagina inicial no iframe, ou usa a primeira pagina, ou adiciona o parametro srcdoc="" onde da para escrever um html dentro, 
-                    
-                
+                    &lt; iframe src="cap22-aula7-8.html" <mark>referrerpolicy="no-referrer"</mark>  sandbox="sandbox"&gt; &lt;/iframe&gt; <br><br>
+
+                    <u>referrerpolicy="no-referrer":</u> politica de referencia - oque esta carregado dentro do iframe, não vai coletar nenhum tipo de informação <br><br>
+                    <mark>referrerpolicy="no-referer-when-downgrade"</mark> - valor padrão <br><br>
+
                 </p>
+                <form action="Cadastro.php" method="get">
+                    <p>
+                        Nome: 
+                        <input type="text" name="Nome" id="nome">
+                        <input type="submit" value="Cadastrar">
+                    </p>
+                </form>
+
+                <iframe src="cap22-aula7-8.html" referrerpolicy="no-referrer" sandbox="allow-forms allow-same-origin allow-scripts"></iframe>
+        
 <hr>                  
             </aside>
 
@@ -149,31 +154,24 @@
             </h1>
 
             <aside>
-
-<hr>
                 <p>
-                    
-                <mark>
-
-                    <ul>
-                        <li> acessibilidade</li>
-                        <li> usabilidade</li>
-                        <li> segurança e SEO</li>
-                    </ul>
-
-                </mark> 
-                
-<br><br>
-
-                    Googlebot (robô de indexação) pode ter dificuldade em rastrear e identificar corretamente conteúdos inseridos dentro de iframes, o que pode prejudicar o ranqueamento orgânico de um site. <br><br>
-
-                    O professor também detalha questões de acessibilidade e usabilidade, mostrando que leitores de tela — usados por pessoas com deficiência visual — muitas vezes não conseguem interpretar corretamente o conteúdo de um iframe, o que pode comprometer a experiência do usuário. Além disso, Guanabara cita que navegadores diferentes podem se confundir ao lidar com botões de navegação (“voltar” e “avançar”) e janelas abertas a partir de iframes, o que reforça a importância de testá-los com cuidado em múltiplos ambientes. <br><br>
-                    
-                    Outro ponto central da aula é a segurança. Guanabara compara o uso de iframes à ideia de “abrir uma porta” do seu site para outro domínio — o que pode representar um risco caso o conteúdo incorporado seja malicioso ou tenha sido invadido. Ele cita ameaças como o Cross-Site Scripting (XSS) e outros tipos de ataques que exploram vulnerabilidades entre sites, alertando que a responsabilidade é sempre do desenvolvedor. <br><br>
-
-                    Guanabara encerra reforçando a mensagem principal do vídeo: “Use, mas não abuse dos iframes.” Eles são recursos valiosos quando aplicados com consciência e propósito. Na próxima aula, o professor promete ensinar como aumentar a segurança do uso de iframes por meio de configurações específicas, como o sandbox e outras políticas do HTML5. Uma continuação essencial para quem quer dominar o uso profissional desse recurso.
+                    Conteudo de sites
                 </p>
-<hr>                  
+
+<hr>   
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/265045525?autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:70%;height:70%;" title="Looking For Something"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<hr> <br><br>
+
+                <p> Mapas google / waze</p>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14701.186343891817!2d-43.1848689756636!3d-22.9024290032716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f58a6a00a9d%3A0x3f251d85272f76f7!2sHostnet%20Internet!5e0!3m2!1spt-BR!2sbr!4v1794774793598!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe> <br><br>
+
+                <iframe src="https://embed.waze.com/iframe?zoom=16&lat=-22.902449&lon=-43.174591&ct=livemap" width="600" height="450" allowfullscreen></iframe> <br><br>
+
+                <p> Google Docs</p>
+
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQcREFsdi_dR4t35KpoB2d0PlHnvU2zT8aYuWl5IM9CvHXtVL3ssRg7v3n1yO1vP7TiFmaVdwR4HeO5/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
             </aside>
 
 <hr>
