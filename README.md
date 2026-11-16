@@ -6,6 +6,8 @@ Projetos desenvolvidos durante os estudos de HTML5 e CSS3 e publicados gratuitam
 |:---|:---|:---:|
 | 📜 **Projeto Cordel** | Site com efeito Parallax, desenvolvido durante o curso de HTML5 e CSS3 do Curso em Vídeo. | [Visualizar](https://v1hu.github.io/projeto-cordel) |
 | 🤖 **Projeto Android** | Página temática sobre a história do mascote Android, desenvolvida com HTML5 e CSS3. | [Visualizar](https://v1hu.github.io/projeto-android) |
+| 📱 **Projeto Redes Sociais** | Página interativa com simulação de perfis e navegação entre diferentes redes sociais, utilizando HTML5 e CSS3. | [Visualizar](https://v1hu.github.io/projeto-social) |
+
 
 *Os projetos são atualizados conforme o avanço dos estudos e a implementação de novas funcionalidades.*
 
