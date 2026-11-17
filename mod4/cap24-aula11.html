@@ -1,0 +1,203 @@
+        <!DOCTYPE html>
+        <html lang="en">
+
+<head>
+    
+        <meta charset="UTF-8">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Formulários</title>
+
+
+
+        <style>
+
+                * {
+                
+                    font-family: Arial, Helvetica, sans-serif;
+}
+
+                body {
+
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bold;
+                    background-color: rgba(151, 150, 148, 0.514);
+                    text-align: center;
+
+}
+
+                aside {
+
+                    background-color: rgba(0, 0, 0, 0.404);
+                    border-radius: 10px;
+                    width: 80%;
+                    padding: 15px;
+                    margin: 0 auto 20px auto;
+                    text-align: justify;
+                    box-shadow: 20px;
+
+}
+
+                form, label {
+
+                    border: 2px solid black;
+
+}
+
+
+                .botao {
+
+                    width: 120px;
+                    display: block;
+                    margin: 20px auto;
+                    padding: 5px;
+                    background-color: brown;
+                    text-decoration: none;
+                    text-align: center;
+                    border: 3px solid black;
+                    text-shadow: 5px;
+
+}
+
+         </style>
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+            <h1>
+
+                <mark>Capítulo 24 Aula 11 – Elemento output em formulários HTML</mark>
+
+            </h1>
+
+            <aside>
+
+<hr>
+
+
+        <form action="cadastro.php" method="post" autocomplete="on">
+
+            <p>
+                <label for="in1">Número 1 :</label>
+                <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+
+            <p>
+                <label for="in2">Número 2 :</label>
+                <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </p>
+
+            <p>
+                <label for="isoma">Soma:</label>
+                <output name="soma" id="isoma">0</output>
+            </p>
+
+            <p class="botao">
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+                
+            </p>
+
+        </form>
+
+
+        <p>
+
+            <mark>input -</mark> entrada de dados <br>
+            <mark>output -</mark> saida de dados <br> 
+            <mark>oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)" -</mark> QUANDO entrar com dados  <br>
+
+        </p>
+<hr>                  
+            </aside>
+
+
+              <aside>
+
+<hr>
+
+
+        <form action="cadastro.php" method="post" autocomplete="on">
+
+            <p>
+
+                <label for="inum">Volume</label>
+                <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+                <output id="ival">5</output>
+
+            </p>
+
+            <p class="botao">
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+                
+            </p>
+
+        </form>
+
+<hr>                  
+            </aside>
+            
+
+
+                          <aside>
+
+<hr>
+
+
+        <form action="cadastro.php" method="get" autocomplete="on">
+
+            <p>
+
+                <label for="iano">Ano de Nascimento:</label>
+                <input type="number" name="ano" id="iano" min="1900" max="2026" oninput="calcIdade()">
+
+            </p>
+
+            <p>
+
+                <label for="iidade">Sua idade é :</label>
+                <output id="iidade">0</output>
+
+            </p>
+
+            <p class="botao">
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+                
+            </p>
+
+        </form>
+
+<hr>                  
+            </aside>
+
+            <script>
+
+                function calcIdade() {
+                    let atual = new Date().getFullYear()
+                    iidade.innerHTML = Number(atual) - Number(iano.value)
+            }
+
+            </script>
+
+
+</body><br>
+   
+
+<p><a class="botao" href="cap25-aula1-2.html">Próxima Aula</a></p>
+            
+<p><a class="botao" href="cap24-aula9-10.html">Aula Anterior</a></p>
+
+</html>

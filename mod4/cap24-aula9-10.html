@@ -1,0 +1,261 @@
+        <!DOCTYPE html>
+        <html lang="en">
+
+<head>
+    
+        <meta charset="UTF-8">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Formulários</title>
+
+
+
+        <style>
+
+                * {
+                
+                    font-family: Arial, Helvetica, sans-serif;
+}
+
+                body {
+
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: bold;
+                    background-color: rgba(151, 150, 148, 0.514);
+                    text-align: center;
+
+}
+
+                aside {
+
+                    background-color: rgba(0, 0, 0, 0.404);
+                    border-radius: 10px;
+                    width: 80%;
+                    padding: 15px;
+                    margin: 0 auto 20px auto;
+                    text-align: justify;
+                    box-shadow: 20px;
+
+}
+
+                form, label {
+
+                    border: 2px solid black;
+
+}
+
+
+                .botao {
+
+                    width: 120px;
+                    display: block;
+                    margin: 20px auto;
+                    padding: 5px;
+                    background-color: brown;
+                    text-decoration: none;
+                    text-align: center;
+                    border: 3px solid black;
+                    text-shadow: 5px;
+
+}
+
+         </style>
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+            <h1>
+
+                <mark>Capítulo 24 Aula 09 – Elementos color, range e file em HTML</mark>
+
+            </h1>
+
+            <aside>
+
+<hr>
+
+
+        <form action="cadastro.php" method="post" autocomplete="on">
+
+            <p>
+                <label for="icor">Cor: </label>
+                <input type="color" name="cor" id="icor" value="green">
+            </p>
+
+            <p>
+                <label for="inivel">Nível de Satisfação: </label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5" value="2.5">
+            </p>
+
+            <p>
+                <label for="ifoto">Foto: </label>
+                <input type="file" name="foto" id="ifoto" >
+            </p>
+
+
+            <p class="botao">
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+                
+            </p>
+
+        </form>
+
+
+        <p>
+
+            <mark>Formulário COLOR</mark> <br><br>
+            &lt;label for="icolor"&gt; <u>Cor:</u> &lt;/label&gt; <br><br>
+
+            <mark>&lt; input type="color" name="cor" id="icor" &gt;</mark><br><br> 
+            <hr>
+
+            <mark>Formulário RANGE</mark> <br><br>
+            &lt;label for="inivel"&gt; <u>Satisfação:</u> &lt;/label&gt;
+            <mark>&lt;input type="range" name="nivel" id="inivel" &gt;</mark><br><br>
+
+                        <hr>
+
+            <mark>Formulário FOTO</mark> <br><br>
+            &lt;label for="ifoto"&gt; <u>Foto:</u> &lt;/label&gt;
+            <mark>&lt;input type="file" name="foto" id="ifoto" &gt;</mark><br><br>
+
+            OBS: QUANDO USAR O CONTROLE DE ENVIO DE ARQUIVOS USAR O MÉTODO POST, POR CAUSA DA LIMITAÇÃO DE 3mil bytes 
+
+        </p>
+<hr>                  
+            </aside>
+
+
+</body><br>
+   
+              <h1>
+
+                <mark>Capítulo 24 Aula 10 – Select, datalist e textarea em HTML</mark>
+
+            </h1>
+
+            <aside>
+
+<hr>
+        <form action="cadastro.php" method="post" autocomplete="on" >
+
+            <p>
+                <label  for="iest" >Estado:</label>
+
+                <select name="Estado" id="iest">
+
+                    <option value="" selected>--- Escolha ---</option>
+                    <optgroup label="Região Sudeste">
+
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP" >São Paulo</option>
+
+                    </optgroup>
+                    
+
+                    <optgroup label="Região Nordeste">
+
+                        <option value="MA">Maranhão</option>
+                        <option value="RS">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+
+                    </optgroup>
+
+                </select>
+            </p>
+
+
+            <p>
+                <label for="iprofissao">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+
+                <datalist id="lstprof">
+
+                    <option value="ADM">Administrador</option>
+                    <option value="CONT">Contabilista</option>
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="PROF">Professor</option>
+
+                </datalist>
+            </p>
+
+            <p>
+                <label for="imsg">Mensagem:</label><br>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+
+
+
+            <p class="botao">
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+                
+            </p>
+
+        </form>
+
+
+        <p>
+
+            <mark>Formulário SELECT</mark> <br><br>
+            &lt;label for="iest"&gt; <u>Estado:</u> &lt;/label&gt; <br><br>
+
+            <mark>&lt; select name="Estado" id="iest" &gt;</mark><br><br> 
+
+            <u>&lt;optgroup label="Região Sudeste"&gt;</u> <br><br>
+
+                        <mark>
+                            &lt;option value="MG"&gt;Minas Gerais&lt;/option&gt; <br><br>
+                            &lt;option value="RJ"&gt;Rio de Janeiro&lt;/option&gt; <br><br>
+                            &lt;option value="SP"&gt;São Paulo&lt;/option&gt; <br><br>
+                        </mark>
+
+            <u>&lt;/optgroup&gt;</u><br>
+
+            <hr>
+
+            <mark>Formulário Datalist</mark> <br><br>
+
+
+            &lt;label for="iprofissao"&gt;Profissão:&lt;/label&gt; <br>
+            &lt;input type="text" name="prof" id="iprof" <mark>list="lstprof"</mark>&gt;<br><br>
+
+            &lt;datalist <mark>id="lstprof</mark>"&gt;<br><br>
+
+                    &lt;option value="ADM"&gt;Administrador&lt;/option&gt;<br>
+                    &lt;option value="CONT"&gt;Contabilista&lt;/option&gt;<br>
+                    &lt;option value="DEV"&gt;Desenvolvedor&lt;/option&gt;<br>
+                    &lt;option value="PROF"&gt;Professor&lt;/option&gt;<br><br>
+
+            &lt;/datalist&gt;
+
+                        <hr>
+
+            &lt;label for="imsg"&gt;Mensagem:&lt;/label&gt; <br><br>
+                <mark>&lt;textarea name="msg" id="imsg" cols="30" rows="10"&gt; &lt;/textarea&gt;</mark>  <br><br>
+
+            OBS: QUANDO USAR O CONTROLE DE ENVIO DE ARQUIVOS USAR O MÉTODO POST, POR CAUSA DA LIMITAÇÃO DE 3mil bytes 
+
+        </p>             
+<hr>                  
+            </aside>
+
+<hr>
+
+<p><a class="botao" href="cap24-aula11-12.html">Próxima Aula</a></p>
+            
+<p><a class="botao" href="cap24-aula7-8.html">Aula Anterior</a></p>
+
+</html>

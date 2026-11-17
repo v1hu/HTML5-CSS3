@@ -14,6 +14,7 @@
         <style>
 
                 * {
+                
                     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -37,6 +38,13 @@
                     box-shadow: 20px;
 
 }
+
+                form, label {
+
+                    border: 2px solid black;
+
+}
+
 
                 .botao {
 
@@ -75,25 +83,71 @@
 <hr>
 
 
-                <form action="cadastro.php" method="POST" autocomplete="on">
+        <form action="cadastro.php" method="get" autocomplete="on">
 
-                    <p>
-                        <label for="iusu">Usuário</label>
-                        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="30" size="11" placeholder="Nome do Usuário" autocomplete="username">
-                    </p>
+            <p>
+                
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome"  id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
 
-                    <p>
-                        <label for="isen">Senha:</label>
-                        <input type="password" name="sen" id="isen" required minlength="8" maxlength="20" size="11" placeholder="Digite sua Senha" autocomplete="current-password">
-                    </p>
+            </p>
 
-                    <p>
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpar">
-                    </p>
+            <p>
 
-                </form>
+                <label for="imedia">Média:</label>
+                <input type="number" name="media" id="imedia" placeholder="Média" min="0" max="10" step="0.1" value="5" required>
+            </p>
 
+            <p>
+
+                <label for="imes">Período Letivo:</label>
+                <input type="month" name="mes" id="imes" value="2026-11">
+
+            </p>
+
+            <p>
+
+                <label for="idia">Dia da Prova</label>
+                <input type="date" required name="dia" id="idia" value="2026-11-16" >
+
+            </p>
+
+            <p>
+
+                <label for="ihora">Hora da Prova:</label>
+                <input type="time" value="00:00" required name="hora" id="ihora">
+
+            </p>
+
+            <p class="botao">
+
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+                
+            </p>
+
+        </form>
+
+
+        <p>
+
+            <mark>Formulário NUMBER</mark> <br><br>
+            &lt;label for="imedia"&gt; <u>Média:</u> &lt;/label&gt;
+            <mark>&lt;input type="number" name="media" id="imedia" placeholder="Média" min="0" max="10" step="0.1" required&gt;</mark><br><br> 
+
+            <mark>Formulário MONTH</mark> <br><br>
+            &lt;label for="imes"&gt; <u>Período Letivo:</u> &lt;/label&gt;
+            <mark>&lt;input type="month" name="mes" id="imes" value="2026-11-16" required&gt;</mark><br><br>
+
+            <mark>Formulário DATE</mark> <br><br>
+            &lt;label for="idia"&gt; <u>Dia da Prova:</u> &lt;/label&gt;
+            <mark>&lt;input type="date" name="dia" id="idia" value="2026-11" required&gt;</mark><br><br>
+
+            <mark>Formulário TIME</mark> <br><br>
+            &lt;label for="ihora"&gt; <u>Hora da Prova:</u> &lt;/label&gt;
+            <mark>&lt;input type="time" name="hora" id="ihora"  required&gt;</mark><br><br>
+
+        </p>
 <hr>                  
             </aside>
 
@@ -115,8 +169,8 @@
 
 <hr>
 
-<p><a class="botao" href="cap24-aula5-6.html">Próxima Aula</a></p>
+<p><a class="botao" href="cap24-aula7-8.html">Próxima Aula</a></p>
             
-<p><a class="botao" href="cap24-aula1-2.html">Aula Anterior</a></p>
+<p><a class="botao" href="cap24-aula3-4.html">Aula Anterior</a></p>
 
 </html>
