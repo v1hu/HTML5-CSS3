@@ -1,3 +1,11 @@
 @charset "UTF-08";
 
-/* CONFIGURAÇÕES DEITADO (LANDSCAPE) */
+/* LANDSCAPE ORIENTATION */
+
+body {
+
+    background-image: url(../cev-landscape.jpg);
+    background-position: left bottom;
+    
+}
+
