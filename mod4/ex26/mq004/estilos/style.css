@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/* Versão Mobile First */
+
+* {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3e;
+    margin: 0px;
+    padding: 0pg;
+    
+}
